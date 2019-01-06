@@ -1,0 +1,598 @@
+/*
+ * This program is part of the OpenLMIS logistics management information system platform software.
+ * Copyright © 2013 VillageReach
+ *
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+ *  
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.
+ * You should have received a copy of the GNU Affero General Public License along with this program.  If not, see http://www.gnu.org/licenses.  For additional information contact info@OpenLMIS.org. 
+ */
+.record-facility-data .facility-heading {
+  border-bottom: 1px solid #d6d6d6;
+  margin-bottom: 13px;
+}
+.record-facility-data .facility-heading h2 {
+  display: inline;
+  vertical-align: middle;
+  border-bottom: none;
+}
+.record-facility-data .facility-heading .distribution-legend {
+  margin: 10px 40px 10px 10px;
+}
+.record-facility-data .facility-heading .distribution-legend .status-icon {
+  margin: 0 0 0 15px;
+}
+.record-facility-data #noFacilitySelected {
+  margin-left: 0;
+}
+.record-facility-data .info-box {
+  padding-bottom: 8px;
+}
+.record-facility-data .info-box .info-box-labels {
+  padding-top: 5px;
+}
+.record-facility-data .select2-container,
+.record-facility-data #selectFacility {
+  width: 100%;
+  margin-bottom: 0px;
+}
+.record-facility-data .facility-change-dropdown {
+  position: relative;
+}
+.facility-info {
+  min-height: 535px;
+  margin-left: 175px;
+  background: #fff;
+  border-left: 1px solid #d2d2d2;
+}
+.facility-info label {
+  margin-right: 15px;
+  font-size: 0.9em;
+}
+.facility-info .radio-label {
+  font-weight: bold;
+  display: inline;
+}
+.facility-info input[type="radio"] {
+  vertical-align: text-top;
+  margin-top: 1px;
+  margin-right: 2px;
+}
+.facility-info #visitDateContainer,
+.facility-info #vehicleIdContainer {
+  display: inline-block;
+  width: 300px;
+}
+.facility-info #visitDateContainer input[type="text"],
+.facility-info #vehicleIdContainer input[type="text"] {
+  width: 82%;
+}
+.facility-container {
+  background: #f2f2f2;
+  border: 1px solid #d2d2d2;
+  position: relative;
+}
+.left-navigation {
+  position: absolute;
+  width: 175px;
+}
+.left-navigation ul {
+  list-style-type: none;
+  margin-left: 0;
+}
+.left-navigation ul li {
+  border-bottom: 1px solid #d2d2d2;
+}
+.left-navigation ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 13px;
+  color: #808080;
+  font-size: 1.1em;
+}
+.left-navigation ul li:hover {
+  background: #f5f5f5;
+}
+.left-navigation ul li.selected {
+  background: white;
+  border-right: 1px solid white;
+  width: 100%;
+  position: relative;
+}
+.left-navigation ul li.selected a {
+  color: #17888f;
+}
+.select2-results ul.select2-result-sub > li .select2-result-label {
+  padding-left: 12px;
+}
+.position-fixing {
+  position: relative;
+  top: 14px;
+}
+.status-icon {
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  margin-right: 6px;
+  display: inline-block;
+}
+.is-incomplete .status-icon {
+  background: #f0a513;
+}
+.is-complete .status-icon {
+  background: #45B600;
+}
+.is-empty .status-icon {
+  background: #cb4040;
+}
+.is-synced .status-icon {
+  background: #1683E6;
+}
+.is-duplicate .status-icon {
+  background: #7c7c7c;
+}
+.facility-toolbar {
+  min-height: 41px;
+  border-top: 1px solid #d2d2d2;
+}
+.facility-toolbar a {
+  padding: 11px 11px 9px;
+  text-decoration: none;
+}
+#addRefrigeratorModal h3 {
+  margin: 0;
+}
+.refrigerator-container {
+  padding: 2px 15px 15px;
+}
+.refrigerator-container form {
+  margin: 0;
+}
+.refrigerator-container h3 {
+  margin: 0 0 12px;
+}
+.refrigerator-container h3 input {
+  margin-top: 10px;
+  font-weight: normal;
+}
+.refrigerator-container .status-cell {
+  text-align: center;
+}
+.refrigerator-container .list-row.is-expanded {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #CCC;
+}
+.refrigerator-container .list-header .span2,
+.refrigerator-container .list-row .span2,
+.refrigerator-container .list-header .span11,
+.refrigerator-container .list-row .span11 {
+  margin-left: 0;
+}
+.refrigerator-container .list-header .span3:last-child a,
+.refrigerator-container .list-row .span3:last-child a {
+  margin-right: 5px;
+}
+.refrigerator-container .list-header .span3:last-child a:last-child,
+.refrigerator-container .list-row .span3:last-child a:last-child {
+  margin-right: 0;
+}
+.refrigerator-container .list-header div:last-child input[type="button"],
+.refrigerator-container .list-row div:last-child input[type="button"] {
+  float: none;
+  margin-left: 0;
+}
+.refrigerator-form {
+  background: white;
+  margin-top: 8px;
+  position: relative;
+  width: 100%;
+  border: 1px solid #EEE;
+  margin-bottom: 16px;
+  padding: 0 3px;
+}
+.refrigerator-form .rnr-form-error {
+  bottom: 20px;
+}
+.refrigerator-form .form-group {
+  width: 50%;
+  float: left;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  min-width: 400px;
+}
+.refrigerator-form .form-cell {
+  width: 100%;
+}
+.refrigerator-form .form-cell label {
+  display: inline;
+}
+.refrigerator-form .form-cell label:first-child {
+  display: block;
+  font-weight: bold;
+}
+.refrigerator-form .form-cell input[type="text"],
+.refrigerator-form .form-cell input[type="number"] {
+  width: 100px;
+  margin-right: 5px;
+}
+.refrigerator-form .form-cell input[type="checkbox"] {
+  margin: 0 2px 0 10px;
+  vertical-align: middle;
+}
+.refrigerator-form .form-cell input[type="radio"] {
+  margin-top: 0px;
+  margin-right: 2px;
+}
+.refrigerator-form .form-cell .radio-label {
+  margin-right: 24px;
+}
+.refrigerator-form .form-cell .checkbox-label {
+  vertical-align: middle;
+  line-height: normal;
+}
+.refrigerator-form .form-cell .problem-form {
+  width: 100%;
+  margin-top: 26px;
+}
+.refrigerator-form .form-cell .problem-form .form-cell {
+  width: 47%;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.refrigerator-form .form-cell .problem-form #otherTextbox {
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 290px;
+}
+.refrigerator-form .form-cell #notes {
+  width: 300px;
+  height: 100px;
+}
+.refrigerator-form #notesCell {
+  padding-top: 15px;
+}
+.isEditable {
+  background: #f9f9f9;
+}
+.facility-distribution-form-table {
+  overflow: auto;
+}
+.facility-distribution-form-table table {
+  min-width: 800px;
+}
+.facility-distribution-form-table table tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+.facility-distribution-form-table th {
+  text-align: left;
+  min-height: 62px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-shadow: 0 1px 0 #FFF;
+  padding: 10px;
+  background: linear-gradient(to bottom, #f9f9f9 0%, #e0e0e0 100%);
+}
+.facility-distribution-form-table td {
+  min-height: 71px;
+  padding: 10px 10px 6px;
+}
+.facility-distribution-form-table td label {
+  display: inline;
+  vertical-align: middle;
+}
+.facility-distribution-form-table td .rnr-form-error {
+  bottom: 20px;
+}
+.facility-distribution-form-table td .warning-alert {
+  bottom: 25px;
+}
+.facility-distribution-form-table .col-ideal-quantity span,
+.facility-distribution-form-table .col-target-group span,
+.facility-distribution-form-table .col-coverage-rate span,
+.facility-distribution-form-table .col-opened-vial span {
+  display: block;
+  text-align: right;
+}
+.facility-distribution-form-table .col-doses,
+.facility-distribution-form-table .col-vials {
+  min-width: 100px;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+.facility-distribution-form-table .col-total {
+  min-width: 70px;
+}
+.facility-distribution-form-table .col-starting-stock,
+.facility-distribution-form-table .col-received,
+.facility-distribution-form-table .col-distributed,
+.facility-distribution-form-table .col-loss,
+.facility-distribution-form-table .col-ending-stock,
+.facility-distribution-form-table .col-ideal-quantity,
+.facility-distribution-form-table .col-existing-quantity,
+.facility-distribution-form-table .col-spoiled-quantity,
+.facility-distribution-form-table .col-delivered-quantity,
+.facility-distribution-form-table .col-complete-vaccinated,
+.facility-distribution-form-table .col-health-center,
+.facility-distribution-form-table .col-mobile-brigade {
+  max-width: 100px;
+  min-width: 70px;
+}
+.facility-distribution-form-table .col-starting-stock input[type="text"],
+.facility-distribution-form-table .col-received input[type="text"],
+.facility-distribution-form-table .col-distributed input[type="text"],
+.facility-distribution-form-table .col-loss input[type="text"],
+.facility-distribution-form-table .col-ending-stock input[type="text"],
+.facility-distribution-form-table .col-ideal-quantity input[type="text"],
+.facility-distribution-form-table .col-existing-quantity input[type="text"],
+.facility-distribution-form-table .col-spoiled-quantity input[type="text"],
+.facility-distribution-form-table .col-delivered-quantity input[type="text"],
+.facility-distribution-form-table .col-complete-vaccinated input[type="text"],
+.facility-distribution-form-table .col-health-center input[type="text"],
+.facility-distribution-form-table .col-mobile-brigade input[type="text"],
+.facility-distribution-form-table .col-starting-stock input[type="number"],
+.facility-distribution-form-table .col-received input[type="number"],
+.facility-distribution-form-table .col-distributed input[type="number"],
+.facility-distribution-form-table .col-loss input[type="number"],
+.facility-distribution-form-table .col-ending-stock input[type="number"],
+.facility-distribution-form-table .col-ideal-quantity input[type="number"],
+.facility-distribution-form-table .col-existing-quantity input[type="number"],
+.facility-distribution-form-table .col-spoiled-quantity input[type="number"],
+.facility-distribution-form-table .col-delivered-quantity input[type="number"],
+.facility-distribution-form-table .col-complete-vaccinated input[type="number"],
+.facility-distribution-form-table .col-health-center input[type="number"],
+.facility-distribution-form-table .col-mobile-brigade input[type="number"] {
+  text-align: right;
+}
+.facility-distribution-form-table .col-health-center input[type="text"],
+.facility-distribution-form-table .col-mobile-brigade input[type="text"],
+.facility-distribution-form-table .col-health-center input[type="number"],
+.facility-distribution-form-table .col-mobile-brigade input[type="number"] {
+  text-align: right;
+  width: 80px;
+}
+.facility-distribution-form-table .col-complete-vaccinated input[type="text"],
+.facility-distribution-form-table .col-complete-vaccinated input[type="number"] {
+  text-align: right;
+  width: 60px;
+}
+.facility-distribution-form-table input[type="text"],
+.facility-distribution-form-table input[type="number"] {
+  width: 85%;
+  margin-bottom: 3px;
+}
+.facility-distribution-form-table input[type="checkbox"] {
+  margin-top: 0;
+}
+.facility-distribution-form-table .header-fixed th {
+  color: #333;
+}
+#coverageHeader {
+  margin-bottom: 0px;
+}
+#coverageContainer .rnr-tabs {
+  margin: 5px 0 11px;
+}
+#applyNRContainer {
+  width: 55%;
+  min-width: 600px;
+  padding-bottom: 12px;
+}
+#coverageTable table {
+  width: 55%;
+  min-width: 600px;
+}
+#coverageTable table th,
+#coverageTable table td {
+  word-wrap: break-word;
+}
+#coverageTable table tbody tr td:first-child {
+  font-weight: bold;
+}
+.coverage-table td:first-child,
+#communityCell {
+  font-size: 13px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #f9f9f9 0%, #e0e0e0 100%) !important;
+  text-shadow: 0 1px 0 #FFF;
+}
+.coverage-table #openedVials {
+  width: 100px;
+}
+.coverage-table .opened-vials {
+  font-weight: bold;
+}
+.coverage-table .opened-vials input[type="text"],
+.coverage-table .opened-vials input[type="number"] {
+  margin-top: 5px;
+}
+.coverage-table .opened-vials #Polio10Container {
+  padding: 43px 0 11px;
+}
+.coverage-table .opened-vials #Polio20Container {
+  padding: 27px 0 10px;
+}
+.coverage-table .opened-vials #Penta1Container {
+  padding: 11px 0 6px;
+}
+.coverage-table .opened-vials #Penta10Container {
+  padding: 22px 0 10px;
+}
+.coverage-table .opened-vials #PCVContainer {
+  padding: 54px 0 10px;
+}
+.facility-visit-container {
+  min-width: 600px;
+  padding: 2px 20px 15px;
+}
+.facility-visit-container label {
+  font-weight: bold;
+}
+.facility-visit-container .form-group {
+  padding: 0;
+  border: none;
+}
+.facility-visit-container .form-row {
+  padding-left: 0;
+  margin: 12px 0;
+}
+.facility-visit-container textarea {
+  width: 550px;
+  height: 150px;
+  margin-bottom: 0;
+}
+.facility-visit-container .signatures .details-container {
+  float: left;
+  width: 262px;
+  margin-left: 40px;
+}
+.facility-visit-container .signatures .details-container:first-child {
+  margin-left: 0;
+}
+.facility-visit-container .signatures .details-container span {
+  padding: 6px 10px;
+  display: inline-block;
+  border-bottom: 0;
+}
+.facility-visit-container .signatures .details-container div {
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+.facility-visit-container .signatures .details-container div label {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+.facility-visit-container .signatures .details-container div input[type="text"] {
+  margin-bottom: 21px;
+}
+.facility-visit-container .signatures .details-container div input[type="text"]:last-child {
+  margin-bottom: 9px;
+}
+.facility-visit-container .not-visit-reason-form {
+  margin-top: 0;
+}
+.facility-visit-container .not-visit-reason-form .form-row {
+  margin: 0 0 5px;
+}
+.facility-visit-container .not-visit-reason-form #otherTextBox {
+  width: 305px;
+  height: 85px;
+}
+.facility-visit-container form {
+  margin: 0;
+}
+.facility-visit-container h3 {
+  margin: 4px 0 3px;
+}
+.facility-visit-container h3 a {
+  margin-top: 10px;
+  font-weight: normal;
+}
+#synchronizationModal {
+  left: 40%;
+  width: 50%;
+}
+#synchronizationModal progress {
+  width: 95%;
+  font-size: 30px;
+  margin-left: 25px;
+}
+#synchronizationModal .info-box {
+  padding-bottom: 8px;
+}
+#synchronizationModal .info-box .info-box-labels {
+  margin-left: 5px;
+  padding-top: 5px;
+}
+#synchronizationModal .sync-failure-message {
+  top: -5px;
+  position: relative;
+}
+#synchronizationModal .icon-exclamation-sign {
+  color: #cd1e24;
+}
+#synchronizationModal .row-fluid {
+  width: 95%;
+  padding: 10px;
+}
+#synchronizationModal .row-fluid strong {
+  margin-bottom: 10px;
+}
+#synchronizationModal .row-fluid .facility-name {
+  white-space: pre;
+}
+.delivery-zone-status {
+  float: left;
+  padding-left: 4%;
+}
+#deleteDistributionLink {
+  text-decoration: none;
+}
+.icon-remove-sign {
+  font-size: 1.4em;
+  color: #cd7f78;
+}
+.icon-remove-sign:hover {
+  cursor: pointer;
+  color: #cd1e24;
+}
+@media screen and (max-width: 910px) {
+  .facility-visit-container {
+    min-width: 0px;
+    width: 92%;
+  }
+  .facility-visit-container textarea {
+    width: 99%;
+  }
+  .facility-visit-container .signatures .details-container {
+    margin-left: 0px !important;
+    margin-top: 40px;
+  }
+  .facility-info {
+    margin-left: 205px;
+  }
+  .left-navigation {
+    width: 205px;
+  }
+  .left-navigation ul li a {
+    font-size: 1.1em;
+  }
+}
+#adultCoverageTable tr:last-child td:first-child {
+  height: 50px;
+}
+.app-cache-status-modal {
+  width: 400px;
+  margin: -170px 0 0 -200px;
+}
+.app-cache-status-modal .icon-ok-circle {
+  font-size: 20px;
+  color: #468847;
+  margin-right: 5px;
+}
+.app-cache-status-modal .icon-exclamation-sign {
+  font-size: 17px;
+  color: #cd1e24;
+  margin-right: 5px;
+}
+.app-cache-status-modal #downloadingLoader {
+  height: 20px;
+  background: url('../images/ajax-loader.gif') 38% 50% no-repeat;
+  margin-bottom: 6px;
+}
+.app-cache-status-modal #successMessage,
+.app-cache-status-modal #errorMessage,
+.app-cache-status-modal .icon {
+  vertical-align: middle;
+}
+.app-cache-status-modal .modal-footer {
+  padding: 10px;
+}
+.app-cache-status-modal .modal-footer .btn {
+  margin-left: 0;
+}
+#syncMessage {
+  font-size: 15px;
+}

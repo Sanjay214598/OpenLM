@@ -1,0 +1,175 @@
+.mmia-form {
+  display: block;
+  width: 994px;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.mmia-form * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.mmia-form .banner-text {
+  text-align: center;
+  font-size: 10px;
+  width: 28px;
+}
+.mmia-form div.separate {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 31px;
+  background-color: black;
+}
+.mmia-form table {
+  border-spacing: 0;
+  border: 2px solid black;
+}
+.mmia-form table .col-1 {
+  width: 79px;
+}
+.mmia-form table .col-2 {
+  width: 159px;
+}
+.mmia-form table .col-3 {
+  width: 239px;
+}
+.mmia-form table .col-4 {
+  width: 319px;
+}
+.mmia-form table .col-5 {
+  width: 399px;
+}
+.mmia-form table td {
+  height: 1.3em;
+}
+.mmia-form table td.align-left {
+  text-align: left;
+  padding: 3px;
+}
+.mmia-form table th,
+.mmia-form table td {
+  border: 1px solid black;
+  width: 79px;
+  word-wrap: break-word;
+}
+.mmia-form table th {
+  height: 37.6px;
+}
+.mmia-form .no-bottom-border {
+  border-bottom: 0;
+}
+.mmia-form tr td.product-code {
+  border-bottom: 0;
+  border-top: 0;
+}
+.mmia-form table.head-section .banner-text {
+  margin-top: 94.88px;
+}
+.mmia-form table.second-section th {
+  background-color: #d0d0d0;
+  word-break: break-all;
+}
+.mmia-form table.second-section td:nth-child(4) {
+  background-color: #f0f0f0;
+}
+.mmia-form .middle-section {
+  display: flex;
+  flex-direction: row;
+}
+.mmia-form .middle-section .regime-section .regime-form thead {
+  background-color: #f0f0f0;
+}
+.mmia-form .middle-section .regime-section .total-form {
+  margin-right: 0;
+  margin-left: auto;
+  border-top: 0;
+}
+.mmia-form .middle-section .regime-section .total-form td {
+  border-top: 0;
+}
+.mmia-form .middle-section .regime-section .total-form td.align-right {
+  text-align: right;
+}
+.mmia-form .middle-section .patient-section {
+  margin-left: 77px;
+}
+.mmia-form .middle-section .patient-section .patient-form thead {
+  background-color: #d0d0d0;
+}
+.mmia-form .middle-section .patient-section .patient-form thead tr {
+  font-size: 8px;
+}
+.mmia-form .middle-section .patient-section .patient-form tbody tr {
+  height: 54px;
+}
+.mmia-form .middle-section .patient-section .patient-form tr td:first-child {
+  background-color: #d0d0d0;
+}
+.mmia-form .middle-section .patient-section .patient-form tr th {
+  height: 18.8px;
+}
+.mmia-form .middle-section .patient-section .comment-wrapper .background {
+  position: absolute;
+  margin-top: 24px;
+  border: 0;
+}
+.mmia-form .middle-section .patient-section .comment-wrapper .background td,
+.mmia-form .middle-section .patient-section .comment-wrapper .background th {
+  border: 0;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+.mmia-form .middle-section .patient-section .comment-wrapper .comment {
+  font-family: monospace;
+  width: 398px;
+  padding-top: 24px;
+  line-height: 20.8px;
+}
+.mmia-form .bottom-section {
+  width: 966px;
+  clear: both;
+  margin-top: 2px;
+  margin-left: 28px;
+}
+.mmia-form .bottom-section table {
+  width: 100%;
+}
+.mmia-form .second-section td,
+.mmia-form .middle-section td {
+  text-align: center;
+}
+table.second-section tr th:first-child,
+table.regime-form tr th:first-child,
+table.second-section tr td:first-child,
+table.regime-form tr td:first-child {
+  background-color: black;
+  color: white;
+}
+.bg-color-green {
+  background-color: #c7ddbb;
+}
+.bg-color-lightyellow {
+  background-color: #faf8c7;
+}
+.bg-color-lightblue {
+  background-color: #d3e9f0;
+}
+.bg-color-gray {
+  background-color: #d0d0d0;
+}
+.bg-color-yellow {
+  background-color: #f6f391;
+}
+.bg-color-darkgray {
+  background-color: #b3b1b1;
+}
+.align-left {
+  text-align: left;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}

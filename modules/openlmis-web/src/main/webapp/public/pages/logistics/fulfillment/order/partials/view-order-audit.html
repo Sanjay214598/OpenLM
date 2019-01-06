@@ -1,0 +1,25 @@
+<!--
+  ~ This program is part of the OpenLMIS logistics management information system platform software.
+  ~ Copyright © 2013 VillageReach
+  ~
+  ~ This program is free software: you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+  ~  
+  ~ This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License for more details.
+  ~ You should have received a copy of the GNU Affero General Public License along with this program.  If not, see http://www.gnu.org/licenses.  For additional information contact info@OpenLMIS.org. 
+  -->
+
+<h2 id="viewOrderHeader" openlmis-message="link.orders.view"></h2>
+
+<div class="app-form">
+	<a href="#/view-orders" id="userAddNew" class="pull-right btn btn-primary">Back</a>
+	<div class="clear-both"></div>
+    <div class="form-group">
+        <h3> Audit Trail </h3>
+		<div ng-show="trail && trail.length" id="trailOrdersGrid" class="gridStyle" ng-grid="trailGridOptions"></div>
+        <div ng-show="trail && trail.length">
+            <openlmis-pagination num-pages="numberOfPages" current-page="currentPage"
+                                 max-size="10"></openlmis-pagination>
+        </div>
+    </div>
+</div>
+
